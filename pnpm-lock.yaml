@@ -10,6 +10,15 @@ dependencies:
   '@types/react-dom':
     specifier: 18.0.11
     version: 18.0.11
+  '@vlcn.io/crsqlite-wasm':
+    specifier: ^0.9.2-next.1
+    version: 0.9.2-next.1
+  '@vlcn.io/react':
+    specifier: link:../crsqlite/js/packages/react
+    version: link:../crsqlite/js/packages/react
+  '@vlcn.io/rx-tbl':
+    specifier: link:../crsqlite/js/packages/rx-tbl
+    version: link:../crsqlite/js/packages/rx-tbl
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.21)
@@ -364,6 +373,24 @@ packages:
       eslint-visitor-keys: 3.4.0
     dev: false
 
+  /@vlcn.io/crsqlite-wasm@0.9.2-next.1:
+    resolution: {integrity: sha512-0vCvt+3AApuGMYuICMQyWQE+d0fyFj6+VcygjpbhfsqSmRRK4JQdSYoPuRyYjC9ziHznM42XGOB1uzJ1ANSjQA==}
+    dependencies:
+      '@vlcn.io/wa-sqlite': 0.15.2-next.0
+      '@vlcn.io/xplat-api': 0.8.1
+      async-mutex: 0.4.0
+    dev: false
+
+  /@vlcn.io/wa-sqlite@0.15.2-next.0:
+    resolution: {integrity: sha512-OfYPeGRPAVTVWHUD4uGQ1eIprNltI+29E8KhCdNLsIIHBrx1+QblK3LxDThqhDINJ9hvvbC1ZdJj2//l0ZUiAg==}
+    dev: false
+
+  /@vlcn.io/xplat-api@0.8.1:
+    resolution: {integrity: sha512-7OwWfsURgwgb5eJTr5uHLwRUmrwdzLSOuMInhdnWX62aWGwZlrMkMV+khldsbo0SzX8AAjIx3zDDpWVAIfv3Ig==}
+    dependencies:
+      comlink: 4.4.1
+    dev: false
+
   /acorn-jsx@5.3.2(acorn@8.8.2):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -480,6 +507,12 @@ packages:
 
   /ast-types-flow@0.0.7:
     resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
+    dev: false
+
+  /async-mutex@0.4.0:
+    resolution: {integrity: sha512-eJFZ1YhRR8UN8eBLoNzcDPcy/jqjsg6I1AP+KvWQX80BqOSW1oJPJXDylPUEeMr2ZQvHgnQ//Lp6f3RQ1zI7HA==}
+    dependencies:
+      tslib: 2.5.0
     dev: false
 
   /autoprefixer@10.4.14(postcss@8.4.21):
@@ -612,6 +645,10 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    dev: false
+
+  /comlink@4.4.1:
+    resolution: {integrity: sha512-+1dlx0aY5Jo1vHy/tSsIGpSkN4tS9rZSW8FIhG0JH/crs9wwweswIo/POr451r7bZww3hFbPAKnTpimzL/mm4Q==}
     dev: false
 
   /commander@4.1.1:
