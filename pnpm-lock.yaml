@@ -14,11 +14,11 @@ dependencies:
     specifier: ^0.9.2-next.1
     version: 0.9.2-next.1
   '@vlcn.io/react':
-    specifier: link:../crsqlite/js/packages/react
-    version: link:../crsqlite/js/packages/react
+    specifier: ^0.9.2-next.1
+    version: 0.9.2-next.1(react@18.2.0)
   '@vlcn.io/rx-tbl':
-    specifier: link:../crsqlite/js/packages/rx-tbl
-    version: link:../crsqlite/js/packages/rx-tbl
+    specifier: ^0.8.2-next.1
+    version: 0.8.2-next.1
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.21)
@@ -379,6 +379,22 @@ packages:
       '@vlcn.io/wa-sqlite': 0.15.2-next.0
       '@vlcn.io/xplat-api': 0.8.1
       async-mutex: 0.4.0
+    dev: false
+
+  /@vlcn.io/react@0.9.2-next.1(react@18.2.0):
+    resolution: {integrity: sha512-rt6dcRElB/lnrinZhd5/4kQTFsE3/1biBm9lYqvchbm+2ksGd9HZdZwd5Mt0mNL4/y+qrGgNp6HYu0Tayyachw==}
+    peerDependencies:
+      react: ^18
+    dependencies:
+      '@vlcn.io/rx-tbl': 0.8.2-next.1
+      '@vlcn.io/xplat-api': 0.8.1
+      react: 18.2.0
+    dev: false
+
+  /@vlcn.io/rx-tbl@0.8.2-next.1:
+    resolution: {integrity: sha512-gzc3QxA0UqplrLCXK2MM9dXpxzhSIk99TgFNrCAXBycHHd7qbdOmoNbZEw9HAu5Vl3U1kYEh9j4YohIWoQFzNQ==}
+    dependencies:
+      '@vlcn.io/xplat-api': 0.8.1
     dev: false
 
   /@vlcn.io/wa-sqlite@0.15.2-next.0:
