@@ -1,7 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-- pages/index.tsx sets up and uses the cr-sqlite database.
-- next.config.js configures webpack to understand how to load wasm as a resource.
+## cr-sqlite specifics:
+
+- **pages/index.tsx** sets up and uses the cr-sqlite database.
+- **next.config.js** configures webpack to understand how to load wasm as a resource.
 
 ## Getting Started
 
