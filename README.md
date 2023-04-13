@@ -5,6 +5,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - **pages/index.tsx** sets up and uses the cr-sqlite database.
 - **next.config.js** configures webpack to understand how to load wasm as a resource.
 
+This only demonstrates setting up the DB locally and does not connecet to a sync server at this moment. You can see examples of syncing here: https://github.com/vlcn-io/live-examples
+but I'll be adding sync to this repo soon.
+
 ## Getting Started
 
 First, run the development server:
