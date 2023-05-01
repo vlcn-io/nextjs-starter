@@ -17,8 +17,8 @@ dependencies:
     specifier: ^0.9.3
     version: 0.9.3(react@18.2.0)
   '@vlcn.io/rest':
-    specifier: link!:../crsqlite/js/packages/rest
-    version: link:link!:../crsqlite/js/packages/rest
+    specifier: link:../crsqlite/js/packages/rest
+    version: link:../crsqlite/js/packages/rest
   '@vlcn.io/rx-tbl':
     specifier: ^0.8.3
     version: 0.8.3

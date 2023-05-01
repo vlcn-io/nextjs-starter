@@ -5,6 +5,7 @@ import wasmUrl from "@vlcn.io/crsqlite-wasm/crsqlite.wasm";
 import { CtxAsync, useQuery } from "@vlcn.io/react";
 import tblrx from "@vlcn.io/rx-tbl";
 import randomWords from "../common/randomWords.js";
+import testSchema from "../schemas/testSchema.js";
 
 type TestRecord = { id: string; name: string };
 
@@ -13,9 +14,7 @@ export default function Home() {
   useEffect(() => {
     initWasm(() => wasmUrl).then(async (sqlite) => {
       const db = await sqlite.open(":memory:");
-      await db.exec(
-        "CREATE TABLE IF NOT EXISTS test (id PRIMARY KEY, name TEXT);"
-      );
+      await db.exec(testSchema.content);
       const ctx = {
         db,
         rx: tblrx(db),
