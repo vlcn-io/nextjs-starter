@@ -1,5 +1,3 @@
-import type { SchemaRow } from "@vlcn.io/rest";
-
 export default {
   namespace: "default",
   name: "testSchema",
@@ -9,4 +7,4 @@ export default {
     CREATE TABLE IF NOT EXISTS test (id PRIMARY KEY, name TEXT);
     SELECT crsql_as_crr('test');
   `,
-} as const;
+};

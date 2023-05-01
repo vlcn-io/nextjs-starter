@@ -5,7 +5,7 @@ import wasmUrl from "@vlcn.io/crsqlite-wasm/crsqlite.wasm";
 import { CtxAsync, useQuery } from "@vlcn.io/react";
 import tblrx from "@vlcn.io/rx-tbl";
 import randomWords from "../common/randomWords.js";
-import testSchema from "../schemas/testSchema.js";
+import testSchema from "../schemas/testSchema.mjs";
 
 type TestRecord = { id: string; name: string };
 

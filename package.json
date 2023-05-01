@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node ./slurp.mjs && next dev",
+    "build": "node ./slurp.mjs && next build",
+    "start": "node ./slurp.mjs && next start",
     "lint": "next lint"
   },
   "dependencies": {

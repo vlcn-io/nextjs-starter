@@ -7,7 +7,8 @@
  */
 
 import fs from "fs";
-import { DefaultConfig } from "@vlcn.io/rest";
+import { DefaultConfig, ServiceDB } from "@vlcn.io/rest";
+import path from "path";
 
 const dir = "./schemas";
 
@@ -15,7 +16,8 @@ async function slurp() {
   const schemas = await Promise.all(
     fs.readdirSync(dir).map((file) => {
       const filePath = path.join(dir, file);
-      return import(filePath);
+      console.log(filePath);
+      return import("./" + filePath);
     })
   );
 
@@ -25,7 +27,7 @@ async function slurp() {
   db.transaction(() => {
     for (const s of schemas) {
       db.prepare(
-        `INSERT OR IGNORE INTO schemas (namepsace, name, version, content, active) VALUES (?, ?, ?, ?, ?);`
+        `INSERT OR IGNORE INTO schema (namespace, name, version, content, active) VALUES (?, ?, ?, ?, ?);`
       ).run(s.namespace, s.name, s.version, s.content, s.active ? 1 : 0);
     }
   })();
