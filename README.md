@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+It is recommended to use `vite` and `vulcan-vite-start`: https://github.com/vlcn-io/vite-starter over NextJS.
+
 ## cr-sqlite specifics:
 
 - **pages/index.tsx** sets up and uses the cr-sqlite database.
